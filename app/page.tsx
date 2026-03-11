@@ -190,7 +190,7 @@ className="object-cover object-[00%_05%] w-full h-full"
       <section id="location" className="px-6 md:px-20 pb-32">
         <div className="max-w-7xl mx-auto bg-slate-900 rounded-[5rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-2xl relative">
           <div className="p-16 md:p-24 text-white">
-            <h2 className="text-5xl font-black tracking-tighter uppercase mb-12 italic">V i s i t <br /> <span className="text-blue-500">L a l g h a t i</span></h2>
+            <h2 className="text-5xl font-black tracking-tighter uppercase mb-12 italic">V i s i t <br /> <span className="text-blue-500">C l i n i c</span></h2>
             <div className="space-y-10">
               <div className="flex items-start gap-6">
                 <MapPin className="text-blue-500 mt-1" size={24} />
