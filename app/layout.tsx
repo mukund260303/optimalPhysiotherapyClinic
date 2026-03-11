@@ -44,7 +44,7 @@ export default function RootLayout({
         {/* WhatsApp Floating Button */}
         {/* Replace 9198XXXXXXXX with the doctor's real WhatsApp number */}
         <a 
-          href="https://wa.me/9691898412?text=Hello%20Physio%20Bhopal,%20I%20want%20to%20book%20an%20appointment" 
+          href="https://wa.me/+919691898412?text=Hello%20Physio%20Bhopal,%20I%20want%20to%20book%20an%20appointment" 
           target="_blank" 
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-2xl shadow-2xl hover:scale-110 active:scale-95 transition-all z-[100] flex items-center justify-center border-4 border-white"
