@@ -118,12 +118,12 @@ className="bg-blue-600 text-white px-10 py-6 rounded-[2rem] font-black text-lg f
           <div className="relative overflow-hidden bg-gradient-to-br from-[#0B1A35] to-[#0F274F] p-10 rounded-[3rem] text-white flex flex-col justify-center items-center text-center">
             <div className="absolute -top-20 -right-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
              <h4 className="text-5xl font-black mb-2 tracking-tighter italic">10+</h4>
-             <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Years Clinic</p>
+             <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Years Trusted Clinic</p>
           </div>
           <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
          <div className="relative overflow-hidden bg-gradient-to-br from-blue-600 to-blue-500 p-10 rounded-[3rem] text-white flex flex-col justify-center items-center text-center">
              <h4 className="text-5xl font-black mb-2 tracking-tighter italic text-white">5k+</h4>
-             <p className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-100">Success Stories</p>
+             <p className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-100">Success Rehabilitation Stories</p>
           </div>
         <div className="md:col-span-2 relative h-[240px] rounded-[3rem] overflow-hidden group cursor-pointer">
 
