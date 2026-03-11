@@ -6,8 +6,7 @@ import { Instagram, Facebook, Youtube, Twitter } from "lucide-react"
 
 export default function Home() {
   return (
-   <div className="relative min-h-screen font-sans text-slate-900 selection:bg-blue-600 selection:text-white overflow-hidden bg-gradient-to-br from-[#eaf3ff] via-white to-[#dce9ff]">
-
+  <div className="relative min-h-screen font-sans text-slate-900 overflow-hidden bg-white">
     {/* ================= PREMIUM 3D MEDICAL BACKGROUND ================= */}
     <div className="absolute inset-0 -z-10 overflow-hidden">
 
