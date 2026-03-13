@@ -121,8 +121,7 @@ sports injuries, stroke rehabilitation and women’s health physiotherapy in Lal
 </div>
 
 
-<div className="flex flex-col md:flex-row justify-center gap-10">
-
+<div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto justify-items-center">
 {/* Doctor Pavan */}
 <div className="bg-white p-6 rounded-[3rem] shadow-xl text-center max-w-[300px]">
 
