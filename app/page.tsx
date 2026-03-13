@@ -155,7 +155,7 @@ className="bg-blue-600 text-white px-10 py-6 rounded-[2rem] font-black text-lg f
     </p>
 
   </div>
-
+         </div>
 </div>
       </section>
 
