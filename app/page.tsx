@@ -57,124 +57,136 @@ export default function Home() {
         </Link>
       </nav>
 
-      {/* 2. HERO SECTION */}
-      <section className="relative px-6 md:px-20 pt-40 pb-32 overflow-hidden bg-transparent">
-        <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-blue-50 rounded-full blur-[120px] -z-10 opacity-60" />
-        
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div className="relative z-10">
-            <div className="inline-flex items-center gap-2 bg-blue-600/5 text-blue-600 px-4 py-2 rounded-full mb-8 border border-blue-600/10">
-              <Sparkles size={14} className="animate-pulse" />
-              <span className="text-[10px] font-black uppercase tracking-widest italic">Premier Care in Lalghati Bhopal</span>
-            </div>
-            
-            <h1 className="text-6xl md:text-[90px] font-black leading-[0.85] tracking-tighter text-slate-900 mb-10">
-              RESTORE <br /> <span className="text-blue-600">MOTION</span> <br /> REVIVE LIFE
-            </h1>
-            
-            <p className="text-lg md:text-xl text-slate-500 font-medium max-w-lg leading-relaxed mb-12 italic border-l-4 border-blue-600 pl-6">
-              Under the guidance of <strong> Dr. Pavan Patidar (PT) </strong> And <strong> Dr. Ravina Patidar </strong> we use advanced techniques to eliminate pain permanently.
-              Optimal physiotherapy clinic provide Physiotherapy services especially for  orthopaedic and neurology condition to provide full strength and mobility , activities of Daily living etc .
-We are also providing the Physiotherapy services for women health.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-5">
-              <Link href="/book" className="group bg-blue-600 text-white px-12 py-6 rounded-[2rem] font-black text-lg flex items-center justify-center gap-4 hover:bg-slate-900 transition-all shadow-2xl shadow-blue-200">
-                BOOK CONSULTATION <ArrowRight size={22} className="group-hover:translate-x-2 transition" />
-              </Link>
-             <a 
-href="tel:+919691898412"
-className="bg-blue-600 text-white px-10 py-6 rounded-[2rem] font-black text-lg flex items-center justify-center gap-4 hover:bg-slate-900 transition-all shadow-2xl shadow-blue-200"
->
-   <Phone size={22} className="text-green-400" />
-</a>
-            </div>
-          </div>
-          </div>
+     {/* 2. HERO SECTION */}
+<section className="relative px-6 md:px-20 pt-40 pb-20 overflow-hidden bg-transparent">
 
+<div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+
+<div className="inline-flex items-center gap-2 bg-blue-600/5 text-blue-600 px-4 py-2 rounded-full mb-8 border border-blue-600/10">
+<Sparkles size={14} className="animate-pulse" />
+<span className="text-[10px] font-black uppercase tracking-widest italic">
+Trusted Physiotherapy Clinic in Lalghati Bhopal
+</span>
+</div>
+
+<h1 className="text-5xl md:text-[80px] font-black leading-[0.9] tracking-tight text-slate-900 mb-10">
+Best Physiotherapy Clinic <br />
+<span className="text-blue-600">in Bhopal</span>
+</h1>
+
+<p className="text-lg md:text-xl text-slate-500 font-medium max-w-2xl leading-relaxed mb-12 italic">
+Under the guidance of <strong>Dr. Pavan Patidar (PT)</strong> and
+<strong> Dr. Ravina Patidar (PT)</strong> we provide advanced physiotherapy
+treatment for spine pain, sports injuries, neurological rehabilitation
+and women’s health physiotherapy in Lalghati, Bhopal.
+</p>
+
+<div className="flex flex-col sm:flex-row gap-5 justify-center">
+
+<Link href="/book"
+className="group bg-blue-600 text-white px-12 py-6 rounded-[2rem] font-black text-lg flex items-center justify-center gap-4 hover:bg-slate-900 transition-all shadow-2xl shadow-blue-200">
+BOOK CONSULTATION
+<ArrowRight size={22} className="group-hover:translate-x-2 transition"/>
+</Link>
+
+<a href="tel:+919691898412"
+className="bg-blue-600 text-white px-10 py-6 rounded-[2rem] font-black text-lg flex items-center justify-center gap-4 hover:bg-slate-900 transition-all shadow-2xl shadow-blue-200">
+<Phone size={22} className="text-green-400"/>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+{/* DOCTOR SECTION */}
+<section className="px-6 md:px-20 pb-32">
 
 {/* SEO Doctor Heading */}
-<div className="text-center mt-16 mb-12">
+<div className="text-center mt-16 mb-16">
 
-  <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900">
-    Expert Physiotherapists in <span className="text-blue-600">Lalghati Bhopal</span>
-  </h2>
+<h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900">
+Expert Physiotherapists in <span className="text-blue-600">Lalghati Bhopal</span>
+</h2>
 
-  <p className="text-slate-500 mt-4 max-w-2xl mx-auto text-sm md:text-base">
-    Meet our experienced physiotherapists providing advanced treatment for spine pain, sports injuries, stroke rehabilitation and women’s health physiotherapy in Lalghati, Bhopal.
-  </p>
+<p className="text-slate-500 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+Meet our experienced physiotherapists providing advanced treatment for spine pain,
+sports injuries, stroke rehabilitation and women’s health physiotherapy in Lalghati, Bhopal.
+</p>
 
 </div>
 
-<div className="relative flex flex-col items-center gap-10">
 
-         <div className="relative flex flex-col items-center gap-10">
+<div className="flex flex-col md:flex-row justify-center gap-10">
 
-  {/* Doctor Pavan */}
-  <div className="bg-white p-6 rounded-[3rem] shadow-xl text-center max-w-[300px]">
+{/* Doctor Pavan */}
+<div className="bg-white p-6 rounded-[3rem] shadow-xl text-center max-w-[300px]">
 
-    <img 
-      src="/gallery/Dr-pavan.png"
-      alt="Dr Pavan Patidar"
-      className="w-36 h-36 rounded-full object-cover object-[center_100%] border-4 border-blue-600 mx-auto"
-    />
+<img
+src="/gallery/Dr-pavan.png"
+alt="Dr Pavan Patidar Physiotherapist Bhopal"
+className="w-36 h-36 rounded-full object-cover object-[center_100%] border-4 border-blue-600 mx-auto"
+/>
 
-    <h3 className="mt-4 text-lg font-black text-slate-900">
-      Dr. Pavan Patidar (PT)
-    </h3>
+<h3 className="mt-4 text-lg font-black text-slate-900">
+Dr. Pavan Patidar (PT)
+</h3>
 
-    <p className="text-sm text-slate-500">
-      MPT (Orthopaedic)
-    </p>
+<p className="text-sm text-slate-500">
+MPT (Orthopaedic)
+</p>
 
-    <p className="text-xs text-slate-400 mt-1">
-      Senior Physiotherapist • 12+ Years Experience
-    </p>
+<p className="text-xs text-slate-400 mt-1">
+Senior Physiotherapist • 12+ Years Experience
+</p>
 
-    <p className="text-xs text-slate-500 mt-3">
-      Expert in spine, knee, shoulder & sports injury physiotherapy
-    </p>
+<p className="text-xs text-slate-500 mt-3">
+Expert in spine, knee, shoulder & sports injury physiotherapy
+</p>
 
-    <p className="text-[11px] text-slate-400 mt-2 italic">
-      Ex Physiotherapist – Chirayu Medical College & Hospital, Bhopal
-    </p>
+<p className="text-[11px] text-slate-400 mt-2 italic">
+Ex Physiotherapist – Chirayu Medical College & Hospital, Bhopal
+</p>
 
-  </div>
-
-
-  {/* Doctor Ravina */}
-  <div className="bg-white p-6 rounded-[3rem] shadow-xl text-center max-w-[300px]">
-
-    <img 
-      src="/gallery/dr-Ravina.png"
-      alt="Dr Ravina Patidar"
-      className="w-36 h-36 rounded-full object-cover object-[center_00%] border-4 border-blue-600 mx-auto"
-    />
-
-    <h3 className="mt-4 text-lg font-black text-slate-900">
-      Dr. Ravina Patidar (PT)
-    </h3>
-
-    <p className="text-sm text-slate-500">
-      MPT (Neuro)
-    </p>
-
-    <p className="text-xs text-slate-400 mt-1">
-      Senior Physiotherapist • 8+ Years Experience
-    </p>
-
-    <p className="text-xs text-slate-500 mt-3">
-      Expert in spine, stroke, peripheral neuropathy, diabetic neuropathy & women health physiotherapy
-    </p>
-
-    <p className="text-[11px] text-slate-400 mt-2 italic">
-      Ex Physiotherapist – CMAS Kohefiza Hospital, Bhopal
-    </p>
-
-  </div>
-         </div>
 </div>
-      </section>
+
+
+{/* Doctor Ravina */}
+<div className="bg-white p-6 rounded-[3rem] shadow-xl text-center max-w-[300px]">
+
+<img
+src="/gallery/dr-Ravina.png"
+alt="Dr Ravina Patidar Physiotherapist Bhopal"
+className="w-36 h-36 rounded-full object-cover object-[center_0%] border-4 border-blue-600 mx-auto"
+/>
+
+<h3 className="mt-4 text-lg font-black text-slate-900">
+Dr. Ravina Patidar (PT)
+</h3>
+
+<p className="text-sm text-slate-500">
+MPT (Neuro)
+</p>
+
+<p className="text-xs text-slate-400 mt-1">
+Senior Physiotherapist • 8+ Years Experience
+</p>
+
+<p className="text-xs text-slate-500 mt-3">
+Expert in spine, stroke, peripheral neuropathy, diabetic neuropathy & women health physiotherapy
+</p>
+
+<p className="text-[11px] text-slate-400 mt-2 italic">
+Ex Physiotherapist – CMAS Kohefiza Hospital, Bhopal
+</p>
+
+</div>
+
+</div>
+
+</section>
 
       {/* 3. BENTO GRID STATS */}
       <section className="px-6 md:px-20 py-10">
