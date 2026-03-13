@@ -91,25 +91,76 @@ className="bg-blue-600 text-white px-10 py-6 rounded-[2rem] font-black text-lg f
             </div>
           </div>
           
-          <div className="relative">
-            <div className="aspect-[4/5] bg-slate-100 rounded-[5rem] overflow-hidden relative shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] border-[12px] border-white">
-               <img 
-                src="/gallery/optimal.png" 
-                alt="Professional Physiotherapy Session" 
-                className="w-full h-full object-cover "
-               />
-               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
-            </div>
-            
-            <div className="absolute -bottom-10 -left-10 bg-white/90 backdrop-blur-2xl p-8 rounded-[3rem] shadow-2xl border border-white/50 z-20 max-w-[280px]">
-              <div className="flex gap-1 text-orange-400 mb-3">
-                {[1, 2, 3, 4, 5].map(i => <Star key={i} size={16} className="fill-orange-400" />)}
-              </div>
-              <p className="text-sm font-black text-slate-900 tracking-tight italic mb-1 uppercase">Top Rated in Bhopal</p>
-              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-loose">Justdial Verified</p>
-            </div>
-          </div>
-        </div>
+         <div className="relative flex flex-col items-center gap-10">
+
+  <div className="flex flex-col md:flex-row gap-10 items-center">
+
+    {/* Doctor 1 */}
+    <div className="bg-white p-6 rounded-[3rem] shadow-xl text-center max-w-[260px]">
+      
+      <img 
+        src="/doctors/dr-image.png"
+        alt="Dr Pavan Patidar"
+        className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-blue-600 mx-auto"
+      />
+
+      <h3 className="mt-4 text-lg font-black text-slate-900">
+        Dr. Pavan Patidar (PT)
+      </h3>
+
+      <p className="text-sm text-slate-500">
+        MPT (Orthopaedic)
+      </p>
+
+      <p className="text-xs text-slate-400 mt-1">
+        Senior Physiotherapist • 12+ Years Experience
+      </p>
+
+      <p className="text-xs text-slate-500 mt-3">
+        Expert in spine, knee, shoulder & sports injury physiotherapy
+      </p>
+
+      <p className="text-[11px] text-slate-400 mt-2 italic">
+        Ex Physiotherapist – Chirayu Medical College & Hospital, Bhopal
+      </p>
+
+    </div>
+
+
+    {/* Doctor 2 */}
+    <div className="bg-white p-6 rounded-[3rem] shadow-xl text-center max-w-[260px]">
+
+      <img 
+        src="/doctors/dr-image.png"
+        alt="Dr Ravina Patidar"
+        className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-blue-600 mx-auto"
+      />
+
+      <h3 className="mt-4 text-lg font-black text-slate-900">
+        Dr. Ravina Patidar (PT)
+      </h3>
+
+      <p className="text-sm text-slate-500">
+        MPT (Neuro)
+      </p>
+
+      <p className="text-xs text-slate-400 mt-1">
+        Senior Physiotherapist • 8+ Years Experience
+      </p>
+
+      <p className="text-xs text-slate-500 mt-3">
+        Expert in spine, stroke, peripheral neuropathy, diabetic neuropathy & women health physiotherapy
+      </p>
+
+      <p className="text-[11px] text-slate-400 mt-2 italic">
+        Ex Physiotherapist – CMAS Kohefiza Hospital, Bhopal
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
       </section>
 
       {/* 3. BENTO GRID STATS */}
