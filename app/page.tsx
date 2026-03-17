@@ -132,18 +132,19 @@ export default function Home() {
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: 'Sports Rehab', icon: <Zap />, img: 'https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?auto=format&fit=crop&q=80&w=600', desc: 'High-performance recovery for athletes. ACL, shoulder, knee & return-to-sport programs.', wa: 'Sports Rehabilitation' },
-              { title: 'Neuro Care', icon: <Award />, img: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=600', desc: 'Scientific protocols for stroke recovery, neuropathy & neuro-rehabilitation.', wa: 'Neuro Physiotherapy' },
-              { title: 'Spine Sync', icon: <Microscope />, img: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&q=80&w=600', desc: 'Precision spine mobilization for back pain, disc issues & postural correction.', wa: 'Spine Treatment' },
-              { title: "Women's Health", icon: <ShieldCheck />, img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=600', desc: 'Prenatal, postnatal & pelvic floor rehabilitation tailored for women.', wa: "Women's Health Physiotherapy" },
-              { title: 'Post-Surgical', icon: <Award />, img: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=600', desc: 'Structured rehab following joint replacements & orthopedic surgeries.', wa: 'Post-Surgical Rehabilitation' },
-              { title: 'Pediatric Physio', icon: <Zap />, img: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=600', desc: 'Gentle therapy for children with developmental delays & musculoskeletal conditions.', wa: 'Pediatric Physiotherapy' },
+              { title: 'Sports Rehab', icon: <Zap />, img: '/gallery/service1.jpeg', desc: 'High-performance recovery for athletes. ACL, shoulder, knee & return-to-sport programs.', wa: 'Sports Rehabilitation', pos: 'object-center' },
+              { title: 'Neuro Care', icon: <Award />, img: '/gallery/service2.jpeg', desc: 'Scientific protocols for stroke recovery, neuropathy & neuro-rehabilitation.', wa: 'Neuro Physiotherapy', pos: 'object-center' },
+              { title: 'Spine Sync', icon: <Microscope />, img: '/gallery/service3.jpeg', desc: 'Precision spine mobilization for back pain, disc issues & postural correction.', wa: 'Spine Treatment', pos: 'object-top' },
+              { title: "Women's Health", icon: <ShieldCheck />, img: '/gallery/service4.jpeg', desc: 'Prenatal, postnatal & pelvic floor rehabilitation tailored for women.', wa: "Women's Health Physiotherapy", pos: 'object-top' },
+              { title: 'Post-Surgical', icon: <Award />, img: '/gallery/service5.png', desc: 'Structured rehab following joint replacements & orthopedic surgeries.', wa: 'Post-Surgical Rehabilitation', pos: 'object-center' },
+              { title: 'Pediatric Physio', icon: <Zap />, img: '/gallery/service6.jpeg', desc: 'Gentle therapy for children with developmental delays & musculoskeletal conditions.', wa: 'Pediatric Physiotherapy', pos: 'object-center' },
             ].map((s, i) => (
               <Reveal key={i} delay={(i % 3) * 0.1}>
                 <div className="group bg-white rounded-[3rem] border border-slate-100 overflow-hidden hover:shadow-2xl transition-all duration-700">
-                  <div className="h-44 relative overflow-hidden">
-                    <Image src={s.img} alt={s.title} fill className="object-cover group-hover:scale-110 transition duration-1000" unoptimized />
-                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md p-3 rounded-2xl text-blue-600">{s.icon}</div>
+                  <div className="relative w-full" style={{paddingBottom: '75%'}}>
+                    <Image src={s.img} alt={s.title} fill className={`${s.pos} object-cover group-hover:scale-105 transition duration-700`} unoptimized />
+                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md p-3 rounded-2xl text-blue-600 z-10">{s.icon}</div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                   </div>
                   <div className="p-8 text-center">
                     <h3 className="text-xl font-black mb-3 uppercase tracking-tighter group-hover:text-blue-600 transition-colors">{s.title}</h3>
