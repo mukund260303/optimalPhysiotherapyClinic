@@ -92,7 +92,7 @@ export default function BookingForm() {
             className="space-y-4"
           >
             {/* Phone */}
-            <motion.a href="tel:+919691898412"
+            <motion.a href="tel:+919329579550"
               className="group flex items-center gap-5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-[1.8rem] px-7 py-5 shadow-lg shadow-blue-100 hover:shadow-xl transition-all hover:-translate-y-0.5"
               whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
@@ -100,7 +100,7 @@ export default function BookingForm() {
               </div>
               <div>
                 <p className="text-[10px] font-black uppercase tracking-[0.25em] text-blue-100 mb-1">Direct Call</p>
-                <p className="text-xl font-black text-white tracking-tight">+91 96918 98412</p>
+                <p className="text-xl font-black text-white tracking-tight">+91 93295 79550</p>
               </div>
               <div className="ml-auto w-9 h-9 bg-white/15 rounded-xl flex items-center justify-center group-hover:bg-white/25 transition-all">
                 <svg width="16" height="16" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
@@ -157,7 +157,7 @@ export default function BookingForm() {
                 </motion.div>
                 <h3 className="text-2xl font-black text-white uppercase tracking-tighter">Booking Successful!</h3>
                 <p className="text-slate-400 text-sm italic font-medium max-w-xs leading-relaxed">
-                  Hum aapko jald hi <span className="text-green-400 font-bold">+91 96918 98412</span> pe call karke confirm karenge. Shukriya! 🙏
+                  Hum aapko jald hi <span className="text-green-400 font-bold">+91 93295 79550</span> pe call karke confirm karenge. Shukriya! 🙏
                 </p>
                 <motion.button
                   onClick={() => setSuccess(false)}

@@ -112,7 +112,7 @@ export default function BookingPage() {
         <h2 className="text-3xl md:text-4xl font-black text-white mb-2 uppercase italic tracking-tighter">Booking Successful!</h2>
         <p className="text-blue-400 font-bold uppercase tracking-[0.3em] text-[10px] mb-2">Optimal Physiotherapy Center</p>
         <p className="text-slate-400 text-xs md:text-sm font-medium italic mb-8 max-w-sm mx-auto">
-          Hum aapko jald hi <span className="text-green-400 font-bold">+91 96918 98412</span> pe call ya WhatsApp karke confirm karenge.
+          Hum aapko jald hi <span className="text-green-400 font-bold">+91 93295 79550</span> pe call ya WhatsApp karke confirm karenge.
         </p>
 
         <div className="bg-black/40 rounded-3xl border border-white/5 overflow-hidden mb-6 md:mb-8 text-left">
@@ -279,7 +279,7 @@ export default function BookingPage() {
             </button>
 
             <p className="text-center text-[9px] font-bold text-slate-500 uppercase tracking-[0.4em] italic opacity-60">
-              Dr. Pavan Patidar • Lalghati Bhopal • +91 96918 98412
+              Dr. Pavan Patidar • Lalghati Bhopal • +91 93295 79550
             </p>
           </form>
         </div>

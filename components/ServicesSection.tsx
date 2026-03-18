@@ -79,7 +79,7 @@ export default function ServicesSection() {
                 </p>
                 <div className="mt-auto">
                   <motion.a
-                    href={`https://wa.me/919691898412?text=Hello%20Optimal%20Physiotherapy%2C%20I%20want%20to%20book%20for%20${encodeURIComponent(s.wa)}`}
+                    href={`https://wa.me/919329579550?text=Hello%20Optimal%20Physiotherapy%2C%20I%20want%20to%20book%20for%20${encodeURIComponent(s.wa)}`}
                     target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-between w-full bg-blue-50 text-blue-600 px-3 py-2 md:px-4 md:py-2.5 rounded-xl md:rounded-2xl font-black text-[9px] md:text-[10px] uppercase tracking-widest overflow-hidden relative group/btn"
                     whileHover={{ scale: 1.02 }}

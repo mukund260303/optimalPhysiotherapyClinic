@@ -80,7 +80,7 @@ const schemaMarkup = {
   description:
     "Advanced physiotherapy clinic in Lalghati Bhopal providing expert care for spine pain, sports injuries, stroke rehabilitation, neuro care and women's health physiotherapy.",
   url: "https://clinik-optimal.vercel.app",
-  telephone: "+919691898412",
+  telephone: "+919329579550",
   image: "https://clinik-optimal.vercel.app/logo.png",
   logo: "https://clinik-optimal.vercel.app/logo.png",
   priceRange: "₹₹",

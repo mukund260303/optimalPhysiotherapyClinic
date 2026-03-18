@@ -17,11 +17,11 @@ export default function TopInfoBar() {
             <span>Mon–Sat: 9AM–1PM &amp; 5PM–8:30PM</span>
           </div>
           <a
-            href="tel:+919691898412"
+            href="tel:+919329579550"
             className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
           >
             <Phone size={10} />
-            <span>+91 96918 98412</span>
+            <span>+91 93295 79550</span>
           </a>
         </div>
 

@@ -6,7 +6,7 @@ export default function FloatingButtons() {
 
       {/* WhatsApp */}
       <a
-        href="https://wa.me/919691898412?text=Hello%20Optimal%20Physiotherapy%2C%20I%20want%20to%20book%20an%20appointment"
+        href="https://wa.me/919329579550?text=Hello%20Optimal%20Physiotherapy%2C%20I%20want%20to%20book%20an%20appointment"
         target="_blank"
         rel="noopener noreferrer"
         title="WhatsApp"
@@ -19,7 +19,7 @@ export default function FloatingButtons() {
 
       {/* Call */}
       <a
-        href="tel:+919691898412"
+        href="tel:+919329579550"
         title="Call Us"
         className="w-14 h-14 bg-blue-600 rounded-2xl shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all border-4 border-white"
       >

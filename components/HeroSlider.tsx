@@ -59,8 +59,8 @@ function SlideContent({ slide, active }: { slide: typeof slides[0]; active: bool
         <Link href="/book" className={`group ${slide.accentClass} text-white px-6 md:px-10 py-4 md:py-5 rounded-[1.5rem] md:rounded-[2rem] font-black text-xs md:text-sm uppercase tracking-widest flex items-center justify-center gap-2 hover:opacity-90 transition-all shadow-xl`}>
           {slide.cta} <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
         </Link>
-        <a href="tel:+919691898412" className="bg-white/10 border border-white/20 text-white px-6 md:px-10 py-4 md:py-5 rounded-[1.5rem] md:rounded-[2rem] font-black text-xs md:text-sm uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-white/20 transition-all">
-          <Phone size={14} /> +91 96918 98412
+        <a href="tel:+919329579550" className="bg-white/10 border border-white/20 text-white px-6 md:px-10 py-4 md:py-5 rounded-[1.5rem] md:rounded-[2rem] font-black text-xs md:text-sm uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-white/20 transition-all">
+          <Phone size={14} /> +91 93295 79550
         </a>
       </div>
     </motion.div>
