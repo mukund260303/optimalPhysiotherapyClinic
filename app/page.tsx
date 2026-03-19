@@ -19,6 +19,7 @@ import TestimonialsCarousel from '@/components/TestimonialsCarousel'
 import YoutubeSection from '@/components/YoutubeSection'
 import FAQSection from '@/components/FAQSection'
 import BookingForm from '@/components/BookingForm'
+import ShortsSection from '@/components/ShortsSection'
 import ScrollProgress from '@/components/ScrollProgress'
 
 function Reveal({ children, delay = 0, className = '' }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -54,7 +55,7 @@ export default function Home() {
           <Image src="/logo.png" alt="Logo" width={scrolled ? 48 : 56} height={scrolled ? 48 : 56} className="transition-all duration-300" />
           <div className="flex flex-col">
             <span className="text-lg font-black tracking-tighter uppercase leading-none">Optimal<span className="text-blue-600"> Physiotherapy</span></span>
-            <span className="text-[8px] font-black text-slate-400 tracking-[0.4em] uppercase mt-0.5 italic"> CLINIC & REHABILITATION CENTRE</span>
+            <span className="text-[8px] font-black text-slate-400 tracking-[0.4em] uppercase mt-0.5 italic">Advanced Rehabilitation Center</span>
           </div>
         </div>
         <div className="hidden lg:flex gap-10 font-black text-[10px] uppercase tracking-[0.2em] text-slate-400">
@@ -81,7 +82,7 @@ export default function Home() {
               <a key={link.label} href={link.href} onClick={() => setMenuOpen(false)} className="text-slate-700 font-black text-sm uppercase tracking-[0.2em] border-b border-slate-100 pb-4 hover:text-blue-600 transition-colors">{link.label}</a>
             ))}
             <Link href="/book" onClick={() => setMenuOpen(false)} className="bg-blue-600 text-white text-center py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 transition-all mt-4">Book Appointment</Link>
-            <a href="tel:+919329579550" className="bg-slate-900 text-white text-center py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center justify-center gap-2"><Phone size={14} /> +91 9329579550</a>
+            <a href="tel:+919691898412" className="bg-slate-900 text-white text-center py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center justify-center gap-2"><Phone size={14} /> +91 96918 98412</a>
           </div>
         </motion.div>
       )}
@@ -108,11 +109,11 @@ export default function Home() {
           <Reveal className="relative h-[220px] sm:h-[280px] md:h-[360px] rounded-[1.5rem] md:rounded-[3rem] overflow-hidden group cursor-pointer">
             <Link href="/gallery" className="block w-full h-full relative">
               <div className="grid grid-cols-4 grid-rows-2 w-full h-full gap-1">
-                <Image src="/gallery/backpain1.jpg" alt="Optimal Physiotherapy Bhopal" fill className="object-cover" />
-                <Image src="/gallery/clinic5.png" alt="Optimal Physiotherapy Clinic" fill className="object-cover object-[0%_5%]" />
-                <Image src="/gallery/clinic8.png" alt="Physiotherapy Treatment Bhopal" fill className="object-cover object-[90%_95%]" />
-                <Image src="/gallery/clinic9.png" alt="Physiotherapy Clinic Lalghati" fill className="object-cover object-[90%_95%]" />
-                <Image src="/gallery/postser.jpg" alt="Physiotherapy Services Bhopal" fill className="object-cover" />
+                <Image src="/gallery/awards2.webp" alt="Optimal Physiotherapy Award Bhopal" fill className="object-cover object-center" />
+                <Image src="/gallery/clinic11.webp" alt="Optimal Physiotherapy Clinic" fill className="object-cover object-center" />
+                <Image src="/gallery/recaption.webp" alt="Physiotherapy Reception Bhopal" fill className="object-cover object-center" />
+                <Image src="/gallery/seminar.webp" alt="Physiotherapy Seminar Bhopal" fill className="object-cover object-center" />
+                <Image src="/gallery/advance_equipment.jpg" alt="Advanced Physiotherapy Equipment" fill className="object-cover object-center" />
               </div>
               <div className="absolute inset-0 bg-black/35 flex flex-col items-center justify-center gap-3 group-hover:bg-black/50 transition-all">
                 <p className="text-white text-lg md:text-2xl font-black uppercase tracking-widest">View Clinic Gallery</p>
@@ -136,7 +137,7 @@ export default function Home() {
               { title: 'Neuro Care', icon: <Award />, img: '/gallery/service2.jpeg', desc: 'Scientific protocols for stroke recovery, neuropathy & neuro-rehabilitation.', wa: 'Neuro Physiotherapy', pos: 'object-center' },
               { title: 'Spine Sync', icon: <Microscope />, img: '/gallery/service3.jpeg', desc: 'Precision spine mobilization for back pain, disc issues & postural correction.', wa: 'Spine Treatment', pos: 'object-top' },
               { title: "Women's Health", icon: <ShieldCheck />, img: '/gallery/service4.jpeg', desc: 'Prenatal, postnatal & pelvic floor rehabilitation tailored for women.', wa: "Women's Health Physiotherapy", pos: 'object-top' },
-              { title: 'Post-Surgical', icon: <Award />, img: '/gallery/service5.png', desc: 'Structured rehab following joint replacements & orthopedic surgeries.', wa: 'Post-Surgical Rehabilitation', pos: 'object-center' },
+              { title: 'Post-Surgical', icon: <Award />, img: '/gallery/service5.jpeg', desc: 'Structured rehab following joint replacements & orthopedic surgeries.', wa: 'Post-Surgical Rehabilitation', pos: 'object-center' },
               { title: 'Pediatric Physio', icon: <Zap />, img: '/gallery/service6.jpeg', desc: 'Gentle therapy for children with developmental delays & musculoskeletal conditions.', wa: 'Pediatric Physiotherapy', pos: 'object-center' },
             ].map((s, i) => (
               <Reveal key={i} delay={(i % 3) * 0.1}>
@@ -149,7 +150,7 @@ export default function Home() {
                   <div className="p-8 text-center">
                     <h3 className="text-xl font-black mb-3 uppercase tracking-tighter group-hover:text-blue-600 transition-colors">{s.title}</h3>
                     <p className="text-slate-500 text-sm font-medium leading-relaxed italic mb-5">{s.desc}</p>
-                    <a href={`https://wa.me/919329579550?text=Hello%20Optimal%20Physiotherapy%2C%20I%20want%20to%20book%20for%20${encodeURIComponent(s.wa)}`} target="_blank" rel="noopener noreferrer"
+                    <a href={`https://wa.me/919691898412?text=Hello%20Optimal%20Physiotherapy%2C%20I%20want%20to%20book%20for%20${encodeURIComponent(s.wa)}`} target="_blank" rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 transition-all">
                       Book Now <ArrowRight size={14} />
                     </a>
@@ -167,7 +168,10 @@ export default function Home() {
       {/* 9. YOUTUBE */}
       <YoutubeSection />
 
-      {/* 10. BOOKING FORM */}
+      {/* 10. SHORTS */}
+      <ShortsSection />
+
+      {/* 11. BOOKING FORM */}
       <BookingForm />
 
       {/* 11. FAQ */}
@@ -181,7 +185,7 @@ export default function Home() {
             <div className="space-y-10">
               <div className="flex items-start gap-6"><MapPin className="text-blue-500 mt-1 shrink-0" size={24} /><div><p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 mb-2">Location</p><p className="text-xl font-bold italic">Lalghati Crossroads, Bhopal, MP</p></div></div>
               <div className="flex items-start gap-6"><Clock className="text-blue-500 mt-1 shrink-0" size={24} /><div><p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 mb-2">Timing</p><p className="text-lg font-bold italic text-blue-400">Morning: 9:00AM – 1:00PM</p><p className="text-lg font-bold italic text-blue-400">Evening: 5:00PM – 8:30PM (Mon–Sat)</p></div></div>
-              <div className="flex items-start gap-6"><Phone className="text-blue-500 mt-1 shrink-0" size={24} /><div><p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 mb-2">Phone</p><a href="tel:+919329579550" className="text-xl font-bold italic hover:text-blue-400 transition-colors">+91 93295 79550</a></div></div>
+              <div className="flex items-start gap-6"><Phone className="text-blue-500 mt-1 shrink-0" size={24} /><div><p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 mb-2">Phone</p><a href="tel:+919691898412" className="text-xl font-bold italic hover:text-blue-400 transition-colors">+91 96918 98412</a></div></div>
             </div>
             <Link href="/book" className="mt-16 inline-flex bg-white text-slate-900 px-12 py-6 rounded-3xl font-black text-xs uppercase tracking-[0.2em] hover:bg-blue-600 hover:text-white transition-all shadow-xl">Reserve Your Slot</Link>
           </Reveal>
@@ -231,14 +235,14 @@ export default function Home() {
           <div className="bg-white/5 p-8 rounded-[2.5rem] border border-white/10">
             <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-blue-500 mb-6 italic">Contact Hub</h4>
             <div className="space-y-6">
-              <div className="flex items-center gap-4"><Phone size={18} className="text-blue-500 shrink-0" /><a href="tel:+919329579550" className="text-sm font-black hover:text-blue-400 transition-colors">+91 93295 79550</a></div>
+              <div className="flex items-center gap-4"><Phone size={18} className="text-blue-500 shrink-0" /><a href="tel:+919691898412" className="text-sm font-black hover:text-blue-400 transition-colors">+91 96918 98412</a></div>
               <div className="flex items-start gap-4"><MapPin size={18} className="text-blue-500 shrink-0 mt-0.5" /><p className="font-bold text-xs text-slate-300">Lalghati Crossroads, Bhopal, MP</p></div>
               <div className="flex items-start gap-4"><Clock size={18} className="text-blue-500 shrink-0 mt-0.5" /><p className="font-bold text-xs text-slate-300">Mon–Sat: 9AM–1PM &<br />5PM–8:30PM</p></div>
             </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-600 text-[9px] font-black uppercase tracking-[0.5em]">© 2026 Optimal Physiotherapy  clinic & Rehabilitation Center | Lalghati Bhopal</p>
+          <p className="text-slate-600 text-[9px] font-black uppercase tracking-[0.5em]">© 2026 Optimal Rehab Centre | Lalghati Bhopal</p>
           <div className="flex items-center gap-2 text-slate-600"><ShieldCheck size={14} /><span className="text-[9px] font-black uppercase tracking-widest">ISO Certified Quality Care</span></div>
         </div>
       </footer>
