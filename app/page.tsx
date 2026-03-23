@@ -235,7 +235,7 @@ export default function Home() {
           <div className="bg-white/5 p-8 rounded-[2.5rem] border border-white/10">
             <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-blue-500 mb-6 italic">Contact Hub</h4>
             <div className="space-y-6">
-              <div className="flex items-center gap-4"><Phone size={18} className="text-blue-500 shrink-0" /><a href="tel:+919691898412" className="text-sm font-black hover:text-blue-400 transition-colors">+91 96918 98412</a></div>
+              <div className="flex items-center gap-4"><Phone size={18} className="text-blue-500 shrink-0" /><a href="tel:+919329579550" className="text-sm font-black hover:text-blue-400 transition-colors">+91 93295 79550</a></div>
               <div className="flex items-start gap-4"><MapPin size={18} className="text-blue-500 shrink-0 mt-0.5" /><p className="font-bold text-xs text-slate-300">Lalghati Crossroads, Bhopal, MP</p></div>
               <div className="flex items-start gap-4"><Clock size={18} className="text-blue-500 shrink-0 mt-0.5" /><p className="font-bold text-xs text-slate-300">Mon–Sat: 9AM–1PM &<br />5PM–8:30PM</p></div>
             </div>
