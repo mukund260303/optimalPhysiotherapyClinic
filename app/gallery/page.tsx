@@ -15,9 +15,8 @@ const realImages = [
   // Clinic & Reception
   { id: 'r4', image_url: '/gallery/recaption.webp', caption: 'Clinic Reception', category: 'Clinic', subtitle: 'Welcoming Environment at Lalghati' },
   { id: 'r5', image_url: '/gallery/consultation_area.jpg', caption: 'Consultation Area', category: 'Clinic', subtitle: 'One-on-One Patient Consultation' },
-  { id: 'r6', image_url: '/gallery/clinic11.webp', caption: 'Treatment Room', category: 'Clinic', subtitle: 'Advanced Treatment Setup' },
-  { id: 'r7', image_url: '/gallery/clinic12.webp', caption: 'Rehabilitation Centre', category: 'Clinic', subtitle: 'State-of-the-Art Facility' },
-
+  { id: 'r6', image_url: '/gallery/clinic11.webp', caption: 'Treatment Room', category: 'Hospital Visit', subtitle: 'Advanced Treatment Setup' },
+ 
   // Equipment & Treatment
   { id: 'r8', image_url: '/gallery/advance_equipment.jpg', caption: 'Advanced Equipment', category: 'Equipment', subtitle: 'Latest Physiotherapy Technology' },
   { id: 'r9', image_url: '/gallery/Therapeutic Exercise.jpg', caption: 'Therapeutic Exercise', category: 'Treatment', subtitle: 'Personalized Exercise Programs' },
@@ -25,7 +24,7 @@ const realImages = [
   { id: 'r11', image_url: '/gallery/sports_injuries.jpg', caption: 'Sports Injury Rehab', category: 'Sports', subtitle: 'High Performance Recovery' },
   { id: 'r12', image_url: '/gallery/joint_pain.jpg', caption: 'Joint Pain Treatment', category: 'Treatment', subtitle: 'Expert Joint Rehabilitation' },
   { id: 'r13', image_url: '/gallery/womanscare.webp', caption: "Women's Health Care", category: "Women's Health", subtitle: 'Specialized Women Physiotherapy' },
-  { id: 'r14', image_url: '/gallery/new4.webp', caption: 'Physiotherapy Session', category: 'Treatment', subtitle: 'Patient-Centered Care' },
+  { id: 'r14', image_url: '/gallery/new4.webp', caption: 'Physiotherapy Session', category: 'News', subtitle: 'Patient-Centered Care' },
 
   // Real patient treatment photos
   { id: 'r15', image_url: '/gallery/IMG20260202200901.jpg', caption: 'Treatment Session', category: 'Treatment', subtitle: 'Expert Hands-on Therapy' },
@@ -50,13 +49,12 @@ const realImages = [
   { id: 'r32', image_url: '/gallery/news7.webp', caption: 'News Article', category: 'News', subtitle: 'Optimal Physiotherapy in News' },
   { id: 'r33', image_url: '/gallery/news8.webp', caption: 'Press Feature', category: 'News', subtitle: 'Expert Physiotherapy Coverage' },
 ]
-
 // Dummy/stock images — end mein
 const dummyImages = [
   { id: 'd1', image_url: '/gallery/backpain1.jpg', caption: 'Back Pain Treatment', category: 'Treatment', subtitle: 'Spine & Back Rehabilitation' },
-  { id: 'd2', image_url: '/gallery/clinic5.png', caption: 'Clinic Facility', category: 'Clinic', subtitle: 'Modern Rehabilitation Setup' },
-  { id: 'd3', image_url: '/gallery/clinic8.png', caption: 'Treatment Bay', category: 'Clinic', subtitle: 'Advanced Treatment Equipment' },
-  { id: 'd4', image_url: '/gallery/clinic9.png', caption: 'Patient Care', category: 'Clinic', subtitle: 'Dedicated Patient Care' },
+  { id: 'd2', image_url: '/gallery/clinic5.png', caption: 'Clinic Facility', category: 'Hospital Visit', subtitle: 'Modern Rehabilitation Setup' },
+  { id: 'd3', image_url: '/gallery/clinic8.png', caption: 'Treatment Bay', category: 'Hospital Visit', subtitle: 'Advanced Treatment Equipment' },
+  { id: 'd4', image_url: '/gallery/clinic9.png', caption: 'Patient Care', category: 'Hospital Visit', subtitle: 'Dedicated Patient Care' },
   { id: 'd5', image_url: '/gallery/postser.jpg', caption: 'Poster Services', category: 'Services', subtitle: 'Comprehensive Physiotherapy Services' },
 ]
 
@@ -64,6 +62,7 @@ const dummyImages = [
 const categoryColors: Record<string, string> = {
   'Our Team': 'bg-blue-600',
   'Clinic': 'bg-slate-700',
+  'Hospital Visit': 'bg-teal-700',
   'Equipment': 'bg-purple-600',
   'Treatment': 'bg-green-600',
   'Sports': 'bg-orange-600',
